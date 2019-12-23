@@ -10,52 +10,75 @@ class App extends React.Component {
         super(props)
         this.newTaskTitleRef = React.createRef();
     }
-        onAddTaskClick =()=> {
-        let  newText = this.newTaskTitleRef.current.value;
-            this.newTaskTitleRef.current.value='';
-            let newTask = {
-                title: newText,
-                priority: 'low',
-                isDone: true
-            };
 
-            let newTasks = [...this.state.tasks, newTask];
-            this.setState({
-                tasks: newTasks
-            });
+    addTask = (newTitle) => {
+        let newTask = {
+            title: newTitle,
+            priority: 'low',
+            isDone: true
+        };
+        let newTasks = [...this.state.tasks, newTask];
+        this.setState({
+            tasks: newTasks
+        });
+    }
 
-        }
+
+    changeFilter = (newFilterValue) => {
+        this.setState(
+            {filterValue: newFilterValue}
+        )
+    };
+
+
+    changeStatus = (task, isDone) => {
+        let newTask = this.state.tasks.map(t => {
+                if (t !== task) {
+                    return t;
+                } else {
+                    return {...t, isDone: isDone}
+                }
+
+            }
+        )
+        this.setState({tasks: newTask})
+
+    };
 
 
     state = {
         tasks: [
-            {title: 'JS', isDone: false, priority: ", priority: low"},
-            {title: 'CSS', isDone: true, property: ' priority: low'},
-            {title: 'Html', isDone: true, property: ' priority: low'},
-            {title: 'ReactJS', isDone: true, property: ' priority: low'},
-            {title: 'Redax', isDone: true, property: ' priority: low'}
+            {title: 'JS', isDone: false, priority: "low"},
+            {title: 'CSS', isDone: true, priority: 'low'},
+            {title: 'Html', isDone: false, priority: 'hight'},
+            {title: 'ReactJS', isDone: true, priority: 'low'},
+            {title: 'Redax', isDone: true, priority: 'hight'}
         ],
-        filterValue: 'All'
+
     };
+
+
     render = (props) => {
 
         return (
             <div className="App">
                 <div className={"todoList"}>
-                    {/*<TodoListHeader/>*/}
+                    <TodoListHeader addTask={this.addTask}/>
 
-                    <div className="todoList">
-                        <div className="todoList-header">
-                            <h3 className="todoList-header__title">What to Learn</h3>
-                            <div className="todoList-newTaskForm">
-                                <input ref={this.newTaskTitleRef} type="text" placeholder="New task name"/>
-                                <button onClick={this.onAddTaskClick}>Add</button>
-                            </div>
-                        </div>
-                    </div>
 
-                    <TodoListTasks tasks={this.state.tasks}/>
-                    <TodoListFooter filterValue={this.state.filterValue}/>
+                    <TodoListTasks changeStatus={this.changeStatus} tasks={this.state.tasks.filter(t => {
+                            if (this.state.filterValue === 'All') {
+                                return true;
+                            }
+                            if (this.state.filterValue === 'Completed') {
+                                return t.isDone === true
+                            }
+                            if (this.state.filterValue === 'Active') {
+                                return t.isDone === false
+                            }
+                        }
+                    )}/>
+                    <TodoListFooter changeFilter={this.changeFilter} filterValue={this.state.filterValue}/>
                 </div>
 
             </div>
