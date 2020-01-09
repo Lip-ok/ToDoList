@@ -8,7 +8,7 @@ import TodoListFooter from "./TodoListFooter";
 class App extends React.Component {
     constructor(props) {
         super(props)
-        this.newTaskTitleRef = React.createRef();
+        this.newTasksTitleRef = React.createRef();
     }
 
     addTask = (newTitle) => {
@@ -50,10 +50,11 @@ class App extends React.Component {
         tasks: [
             {title: 'JS', isDone: false, priority: "low"},
             {title: 'CSS', isDone: true, priority: 'low'},
-            {title: 'Html', isDone: false, priority: 'hight'},
+            {title: 'Html', isDone: false, priority: 'high'},
             {title: 'ReactJS', isDone: true, priority: 'low'},
-            {title: 'Redax', isDone: true, priority: 'hight'}
+            {title: 'Redux', isDone: true, priority: 'high'}
         ],
+
 
     };
 
@@ -62,27 +63,26 @@ class App extends React.Component {
 
         return (
             <div className="App">
-                <div className={"todoList"}>
+
+                <div className="todoList">
                     <TodoListHeader addTask={this.addTask}/>
-
-
-                    <TodoListTasks changeStatus={this.changeStatus} tasks={this.state.tasks.filter(t => {
+                    <TodoListTasks changeStatus={this.changeStatus} tasks={ this.state.tasks.filter(t => {
                             if (this.state.filterValue === 'All') {
                                 return true;
                             }
                             if (this.state.filterValue === 'Completed') {
-                                return t.isDone === true
+                                return t.isDone === true;
                             }
                             if (this.state.filterValue === 'Active') {
-                                return t.isDone === false
+                                return t.isDone === false;
                             }
                         }
                     )}/>
                     <TodoListFooter changeFilter={this.changeFilter} filterValue={this.state.filterValue}/>
                 </div>
+             </div>
 
-            </div>
-        );
+        )
     }
 }
 

@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
-class TodoListFooter extends React.Component {
+
+class Button extends React.Component {
     render = (props) => {
 let classForAll = this.props.filterValue === "All" ? "filter-active" : "";
 let classForCompleted = this.props.filterValue === "Completed" ? "filter-active" : "";
@@ -17,4 +18,4 @@ let classForActive = this.props.filterValue === "Active" ? "filter-active" : "";
         );
     }
 }
-export default TodoListFooter;
+export default Button;

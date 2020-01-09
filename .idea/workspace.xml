@@ -2,12 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fcc5b956-5fa7-4a4d-bec6-930a03d76355" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/TodoListFooter.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TodoListFooter.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/TodoListFooter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TodoListHeader.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/TodoListHeader.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TodoListTask.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/TodoListTask.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TodoListTasks.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/TodoListTasks.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TodoListFooter.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Button.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TodoListHeader.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/TodoListHeader.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TodoListTask.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/TodoListTask.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TodoListTasks.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/TodoListTasks.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,6 +19,16 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/App.jsx" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/TodoListTask.jsx" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
   </component>
   <component name="ProjectId" id="1UQXvPGqChwykIaCNP5uYnOx4vk" />
   <component name="ProjectViewState">
@@ -27,12 +40,30 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="jsx.switch.disabled" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.jscs" value="true" />
+    <property name="node.js.detected.package.standard" value="true" />
+    <property name="node.js.detected.package.stylelint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.jscs" value="project" />
+    <property name="node.js.path.for.package.standard" value="project" />
+    <property name="node.js.path.for.package.stylelint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.jscs" value="" />
+    <property name="node.js.selected.package.standard" value="" />
+    <property name="node.js.selected.package.stylelint" value="" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="G:\it-kamasutra\todolist\todolist\src" />
+    </key>
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -61,18 +92,61 @@
       <workItem from="1576505102249" duration="10863000" />
       <workItem from="1576684362140" duration="43000" />
       <workItem from="1577083761087" duration="1866000" />
-      <workItem from="1577113473794" duration="10278000" />
+      <workItem from="1577113473794" duration="11317000" />
+      <workItem from="1577181799188" duration="10000" />
+      <workItem from="1577453272223" duration="3146000" />
+      <workItem from="1577522349662" duration="2068000" />
+      <workItem from="1577573555140" duration="147000" />
+      <workItem from="1577721152317" duration="430000" />
+      <workItem from="1577724729761" duration="13000" />
+      <workItem from="1578064992471" duration="547000" />
+      <workItem from="1578457086091" duration="2084000" />
+      <workItem from="1578495176201" duration="3189000" />
+      <workItem from="1578577715532" duration="7000" />
+      <workItem from="1578580029950" duration="9723000" />
     </task>
+    <task id="LOCAL-00001" summary="Lesson 4 completed">
+      <created>1577125741347</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1577125741347</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Lesson 4 completed" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lesson 4 completed" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1576684402552">
+    <state x="552" y="177" key="#Closure_Linter" timestamp="1578497594607">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1576684402552" />
+    <state x="552" y="177" key="#Closure_Linter/0.0.1920.1040@0.0.1920.1040" timestamp="1578497594607" />
+    <state x="552" y="177" key="#Inspections" timestamp="1578497661361">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="177" key="#Inspections/0.0.1920.1040@0.0.1920.1040" timestamp="1578497661361" />
+    <state x="552" y="177" key="#JSCS" timestamp="1578497602432">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="177" key="#JSCS/0.0.1920.1040@0.0.1920.1040" timestamp="1578497602432" />
+    <state x="552" y="179" key="#Stylelint" timestamp="1578581614550">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="179" key="#Stylelint/0.0.1920.1040@0.0.1920.1040" timestamp="1578581614550" />
+    <state x="585" y="110" key="CommitChangelistDialog2" timestamp="1577125740278">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="585" y="110" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1577125740278" />
+    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1577724740376">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1577724740376" />
     <state width="1258" height="259" key="GridCell.Tab.0.bottom" timestamp="1575371920806">
       <screen x="0" y="0" width="1280" height="982" />
     </state>
@@ -89,10 +163,15 @@
       <screen x="0" y="0" width="1280" height="982" />
     </state>
     <state width="1258" height="259" key="GridCell.Tab.0.right/0.0.1280.982@0.0.1280.982" timestamp="1575371920806" />
-    <state x="158" y="122" key="SettingsEditor" timestamp="1575368276758">
-      <screen x="0" y="0" width="1280" height="982" />
+    <state x="237" y="129" key="SettingsEditor" timestamp="1578580099907">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="158" y="122" key="SettingsEditor/0.0.1280.982@0.0.1280.982" timestamp="1575368276758" />
+    <state x="237" y="129" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1578580099907" />
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1577125747237">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1577125747237" />
     <state x="296" y="220" key="run.anything.popup" timestamp="1575367690138">
       <screen x="0" y="0" width="1280" height="982" />
     </state>
