@@ -21,3 +21,11 @@
 .todoList-task.done {
   opacity: 0.5;
 }
+
+.App {
+  display: flex;
+}
+
+.todoList {
+  width: 300px;
+}
